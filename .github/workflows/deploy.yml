@@ -21,10 +21,4 @@ jobs:
     - name: Deploy to Production
       run: |
        git init
-git init
-git add .
-git commit -m "first commit"
-git remote add origin https://github.com/mararie12/world.git
-git branch -M master
-git push -u origin master
-
+        ssh user@your-server-ip "cd /path/to/your/app && git pull origin master"
